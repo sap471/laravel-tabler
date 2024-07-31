@@ -7,17 +7,22 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
+      '@fontsource-variable/inter':
+        specifier: ^5.0.19
+        version: 5.0.19
       '@tabler/core':
         specifier: 1.0.0-beta20
         version: 1.0.0-beta20
       '@tabler/icons':
         specifier: ^3.11.0
         version: 3.11.0
-    devDependencies:
       axios:
         specifier: ^1.6.4
         version: 1.7.2
+      bootstrap:
+        specifier: ^5.3.3
+        version: 5.3.3(@popperjs/core@2.11.8)
       laravel-vite-plugin:
         specifier: ^1.0
         version: 1.0.5(vite@5.3.4(sass@1.77.8))
@@ -167,6 +172,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/inter@5.0.19':
+    resolution: {integrity: sha512-V5KPpF5o0sI1uNWAdFArC87NDOb/ZJDPXLomEiKmDCYMlDUCTn2flkuAZkyME2rtGOKO7vzCuDJAND0m/5PhDA==}
 
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
@@ -333,6 +341,11 @@ packages:
 
   bootstrap@5.3.1:
     resolution: {integrity: sha512-jzwza3Yagduci2x0rr9MeFSORjcHpt0lRZukZPZQJT1Dth5qzV7XcgGqYzi39KGAVYR8QEDVoO0ubFKOxzMG+g==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.8
+
+  bootstrap@5.3.3:
+    resolution: {integrity: sha512-8HLCdWgyoMguSO9o+aH+iuZ+aht+mzW0u3HIMzVu7Srrpv7EBBxTnrFlSCskwdY1+EOFQSm7uMJhNQHkdPcmjg==}
     peerDependencies:
       '@popperjs/core': ^2.11.8
 
@@ -564,6 +577,8 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@fontsource-variable/inter@5.0.19': {}
+
   '@popperjs/core@2.11.8': {}
 
   '@rollup/rollup-android-arm-eabi@4.18.1':
@@ -644,6 +659,10 @@ snapshots:
   binary-extensions@2.3.0: {}
 
   bootstrap@5.3.1(@popperjs/core@2.11.8):
+    dependencies:
+      '@popperjs/core': 2.11.8
+
+  bootstrap@5.3.3(@popperjs/core@2.11.8):
     dependencies:
       '@popperjs/core': 2.11.8
 

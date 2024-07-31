@@ -6,14 +6,14 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@fontsource-variable/inter": "^5.0.19",
+        "@tabler/core": "1.0.0-beta20",
+        "@tabler/icons": "^3.11.0",
         "axios": "^1.6.4",
+        "bootstrap": "^5.3.3",
         "laravel-vite-plugin": "^1.0",
         "sass": "^1.77.8",
         "vite": "^5.0"
     },
-    "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903",
-    "dependencies": {
-        "@tabler/core": "1.0.0-beta20",
-        "@tabler/icons": "^3.11.0"
-    }
+    "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
 }
