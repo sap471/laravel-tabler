@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@import "@tabler/core/dist/css/tabler.css";
+@import "@tabler/core/dist/css/tabler-flags.css";
+@import "@tabler/core/dist/css/tabler-payments.css";
+@import "@tabler/core/dist/css/tabler-vendors.css";
+@import "@tabler/core/dist/css/tabler-icons.css";
+
+@import "@fontsource-variable/inter/index.css";
+
+:root {
+    --tblr-font-sans-serif: "Inter Var", -apple-system, BlinkMacSystemFont,
+        San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+}
+
+body {
+    font-feature-settings: "cv03", "cv04", "cv11";
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.ti {
+    font-size: 1.35em;
+}
